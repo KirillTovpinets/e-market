@@ -1,0 +1,239 @@
+nav a{
+	font-weight: 400;
+	padding-right: 2em;
+}
+.carousel-inner{
+	height:100vh;
+}
+.carousel-item{
+	height: inherit;
+	background-size:cover;
+	background-position: center;
+}
+
+.navbar-transparent a{
+	color:#fff;
+}
+
+form input{
+	color:#fff;
+	background-color: rgba(255,255,255, 0.08);
+	border-color: rgba(255,255,255,0.15);
+	border-radius: 3em;
+	border-left: none;
+}
+form button{
+	border-radius: 3em;
+	border-right:none;
+	background-color: rgba(255,255,255, 0.08);
+	border-color: rgba(255,255,255,0.15);
+	color:#fff;
+}
+.user-cart{
+	color:#e43315;
+	margin-left: 10px;
+}
+
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+.contacts{
+	margin-right:20px;
+	color:#fff;
+}
+
+.navbar{
+	padding: 1.5rem;
+}
+
+section{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+img{
+	width: 100%;
+}
+.no-padding{
+	padding: 0;
+}
+.section-with-title{
+	padding:7rem 10rem;
+}
+.section-with-title h1{
+	text-align: center;
+	font-size: 5.714em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section-with-title h1 .colored{
+	color:#01a3c1;
+}
+
+.section-with-title p{
+	text-align: center;
+	font-size: 1.857rem;
+	font-weight: 200;
+}
+#galeria .row{
+	width: 100%;
+	margin: 0;
+}
+#galeria img,
+#shop-window [class^="col-"] img{
+	width: 100%;
+}
+#galeria .col,
+#shop-window [class^="col-"]{
+	padding: 0;
+}
+.full-height .full-screen-image{
+	height: 100vh;
+	background:url('../assets/images/bg2.jpg');
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.part-height .full-screen-image{
+	height:70vh;
+}
+#bill-board .full-screen-image{
+	background:url('../assets/images/bg1.jpg');
+	background-size:cover;
+	background-position: center;
+	position: relative;
+}
+.full-height .full-screen-image:before,
+.part-height .full-screen-image:before{
+	content:'';
+	height:100%;
+	width: 100%;
+	z-index: 0;
+	background: #000;
+	opacity:.8;
+	position: absolute;
+	top:0px;
+}
+.full-height .container,
+.part-height .container{
+	z-index: 1;
+}
+.full-height h3,
+.part-height h3{
+	font-size: 5.714em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+}
+.full-height h3 .colored,
+.part-height h3 .colored{
+	font-size: 7.857rem;
+	color:#e43315;
+}
+.part-height h3 .colored{
+	font-size: inherit;
+}
+#bill-board h3 .colored{
+	color:#f6c629;
+}
+#shop-window{
+	padding-bottom: 100px;
+}
+#shop-window .container,
+#testimonials .container{
+	margin-top: -100px;
+}
+#testimonials{
+	padding-bottom: 200px;
+}
+
+#shop-window .container .description{
+	padding:30px;
+}
+
+#shop-window .container .description{
+	text-align: center;
+}
+
+#shop-window .container h4{
+	margin-bottom: 1em;
+}
+
+#shop-window .container span{
+	font-size: 1.85em;
+	font-weight: 700;
+}
+
+#shop-window .window-item{
+	border-right:1px solid #ccc;
+}
+#shop-window .window-item:nth-child(3n + 3){
+	border: none;
+}
+#shop-window button{
+	border-radius:2em;
+	padding: .7em 3.5em;
+}
+#shop-window button:first-child{
+	margin-right: 1em;
+}
+#shop-window .buttons{
+	margin-top: 20px;
+}
+[ngxSlickItem]{
+	margin-right: 40px;
+}
+
+#parallax{
+	height: 300px;
+}
+.footer-content{
+	background-color: #181818;
+	padding: 150px 100px 100px;
+	position: relative;
+}
+.footer-content .title{
+	color:#c2c2c2;
+	margin-bottom: 1.6em;
+	text-transform: capitalize;
+	font-size: 1.571em;
+	font-weight: 400;
+}
+footer .content{
+	color:#5b5b5b;
+}
+footer .copyright{
+	background-color: #121212;
+	color:#5b5b5b;
+}
+footer .copyright span{
+	display: block;
+	text-align: center;
+	padding: 4.3em 0px;
+}
+
+.brands-list{
+	padding:7rem 0px 0px;
+}
+.callback{
+	position: absolute;
+	z-index: 10;
+	margin-top: -75px;
+}
+.callback .content{
+	padding:30px 50px;
+	background-color: #121212;
+	color:#fff;
+}
+.callback .content p{
+	margin: 0;
+	font-size: 1.857em;
+}
+.callback button{
+	border-radius: 3em;
+	padding: .75em 1.85em;
+	float: right;
+}

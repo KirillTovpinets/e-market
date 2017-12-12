@@ -1,20 +1,240 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-transparent">
+    <a href="#" class="navbar-brand">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="" class="nav-link">Главная</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="" class="nav-link">Каталог</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="" class="nav-link">О нас</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="" class="nav-link">Новости</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="" class="nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="contacts">
+        <span class="fa fa-phone"></span>
+        <span>0 (800)123-456</span>
+      </div>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <div class="input-group-btn">
+            <button class="btn btn-outline-default my-2 my-sm-0" type="submit">
+              <span class="fa fa-search"></span>
+            </button>
+          </div>
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+      <div class="user-cart">
+        <span class="fa fa-shopping-cart"></span>
+        <span class="total">$0.00</span>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="main-slider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#main-slider" data-slide="1" class="active"></li>
+    <li data-target="#main-slider" data-slide="2"></li>
+    <li data-target="#main-slider" data-slide="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('http://placehold.it/1700x400');">
+    </div>
+    <div class="carousel-item" style="background-image: url('http://placehold.it/1700x400');">
+    </div>
+    <div class="carousel-item" style="background-image: url('http://placehold.it/1700x400');">
+    </div>
+  </div>
+</section>
+<section id="welcome" class="section-with-title">
+  <div class="container">
+    <div class="greeting">
+      <h1>Welcome to <span class="colored">bezoil</span></h1>
+      <p>this is our slogan</p>
+    </div>
+  </div>
+</section>
+<section id="galeria">
+  <div class="row">
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+  </div>
+  <div class="row">
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+    <div class="col"><img src="http://placehold.it/200x200" alt=""></div>
+  </div>
+</section>
+<section id="advertisement" class="full-height">
+  <div class="full-screen-image d-flex align-items-center">
+    <div class="container">
+      <h3>Perform and <span class="colored">inspire</span></h3>
+    </div>
+  </div>
+</section>
+<section id="shop-window">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+      <div class="col-4 window-item">
+        <img src="http://placehold.it/300x300" alt="">
+        <div class="description">
+          <h4>Title</h4>
+          <span>190.00-200.00</span>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center buttons">
+      <button class="btn btn-dark">More</button>
+    </div>
+  </div>
+</section>
+<section id="parallax" parallax style="height:300px; background-image: url('http://placehold.it/1700x300/6A1111');">
+</section>
+<section id="welcome" class="section-with-title">
+  <div class="container">
+    <div class="greeting">
+      <h1>FEATURED <span class="colored">BRANDS</span></h1>
+      <p>this is our slogan</p>
+    </div>
+    <div class="brands-list">
+      <div class="row brands">
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="bill-board" class="part-height">
+  <div class="full-screen-image d-flex align-items-center">
+    <div class="container">
+      <h3>Why us? <span class="colored">testimonials</span></h3>
+    </div>
+  </div>
+</section>
+<section id="testimonials">
+  <div class="container">
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+    </ngx-slick>
+  </div>
+</section>
+<section class="callback">
+  <div class="container">
+      <div class="row content align-middle">
+        <div class="col-8 mr-auto text d-flex align-items-center"><p>Order a Callback to Get Free Professional Consultation</p></div>
+        <div class="col-4 d-flex align-items-center justify-content-end"><button class="btn btn-danger">Order a callback</button></div>
+      </div>
+    </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="title">Title</div>
+          <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore possimus molestiae provident rem dolorum, impedit porro iste odio! Aperiam adipisci quaerat quia amet, cum totam iure. Blanditiis, modi, iure.</div>
+        </div>
+        <div class="col">
+          <div class="title">Customer service</div>
+          <div class="content">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="title">Information</div>
+          <div class="content">
+            <ul>
+              <li>1 item</li>
+              <li>2 item</li>
+              <li>3 item</li>
+              <li>4 item</li>
+              <li>5 item</li>
+              <li>6 item</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="title">Concact us</div>
+          <div class="content">Content</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>ThemeREX © 2017 All Rights Reserved. Terms of Use and Privacy Policy</span>
+  </div>
+</footer>

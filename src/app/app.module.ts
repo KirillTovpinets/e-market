@@ -3,12 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { SlickModule } from 'ngx-slick';
+import { Parallax, ParallaxConfig } from 'ngx-parallax';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Parallax
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
