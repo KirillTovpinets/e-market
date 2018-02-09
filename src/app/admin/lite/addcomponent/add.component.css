@@ -1,0 +1,8 @@
+#preview input[type="file"],
+#preview img{
+	width: 100%;
+}
+
+.ng-invalid{
+	border-color: #f00;
+}

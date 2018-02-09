@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-body{
+body, html{
 	font-family: 'Montserrat', sans-serif;
+	height:100%;
+}
+.btn-success{
+	background-color: #35DC4E;
+	border-color: #35DC4E;
+}
+.btn:hover{
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: none;
+}
+.head .description h1{
+	color: #ccc;
 }

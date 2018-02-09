@@ -1,0 +1,132 @@
+<!-- ============================================================== -->
+<!-- Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-themecolor">Добавить скутер</h3>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Sales overview chart -->
+<!-- ============================================================== -->
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title m-b-5"><span class="lstick"></span>Информация о скутере </h3>
+                <form class="form-horizontal form-material" (submit)="addForm.valid && Save(newBike)" #addForm="ngForm" novalidate>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3" id="preview">
+                            <input type='file' (change)="readUrl($event)" class="btn btn-default" name="selectedFile">
+                            <img [src]="url">
+                        </div>
+                        <div class="col-lg-9 col-md-9">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="col-md-12">Название</label>
+                                    <div class="col-md-12">
+                                        <input required type="text" name="title" [(ngModel)]="newBike.title" placeholder="Название скутера" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="example-email" class="col-md-12">Размеры</label>
+                                    <div class="row col-md-12">
+                                        <div class="col">
+                                            <input required type="number" placeholder="ширина" [(ngModel)]="newBike.size.width" class="form-control form-control-line" name="width" id="width">
+                                        </div>
+                                        <div class="col">
+                                            <input required type="number" placeholder="высота" [(ngModel)]="newBike.size.height" class="form-control form-control-line" name="height" id="height">
+                                        </div>
+                                        <div class="col">
+                                            <input required type="number" placeholder="длина" [(ngModel)]="newBike.size.length" class="form-control form-control-line" name="length" id="length">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Тормозная система</label>
+                                    <div class="col-md-12">
+                                        <select class="form-control" name="breaksystem" id="breaksystem" [(ngModel)]="newBike.breakSystem">
+                                            <option value="{{ opt.id }}" *ngFor="let opt of breaks">{{ opt.name }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Максимальная скорость</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" [(ngModel)]="newBike.maxSpeed" name="maxSpeed" placeholder="км/ч" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Вес</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" placeholder="кг" [(ngModel)]="newBike.weight" name="weight" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Мотор</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" placeholder="W" [(ngModel)]="newBike.motor" name="motor" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Батарея</label>
+                                    <div class="row col-md-12">
+                                        <div class="col-md-6">
+                                            <input required type="number" placeholder="V" [(ngModel)]="newBike.batteryV" class="form-control form-control-line" name="batteryV">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input required type="number" placeholder="A" [(ngModel)]="newBike.batteryA" class="form-control form-control-line" name="batteryA">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4">
+                                    <label class="col-md-12">Время зарядки</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" placeholder="ч" [(ngModel)]="newBike.batteryCharging" class="form-control form-control-line" name="batteryCharging">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3">
+                                    <label class="col-md-12">Максимальная нагрузка</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" placeholder="кг" [(ngModel)]="newBike.maxLoad" class="form-control form-control-line" name="maxLoad">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3">
+                                    <label class="col-md-12">Макс. расстояние на одной зарядке</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" [(ngModel)]="newBike.maxWayLength" name="maxWayLength" placeholder="км" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3">
+                                    <label class="col-md-12">Цена "от"</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" [(ngModel)]="newBike.lifeVPrice" name="lifeVPrice" placeholder="км" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3">
+                                    <label class="col-md-12">Цена "до"</label>
+                                    <div class="col-md-12">
+                                        <input required type="number" [(ngModel)]="newBike.powerVPrice" name="powerVPrice" placeholder="км" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button class="btn btn-success" type="submit">Сохранить</button>
+                            <button type="reset" class="btn btn-warning">Сбросить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

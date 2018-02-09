@@ -1,0 +1,30 @@
+.head{
+	background-image:url('/assets/images/bg3.jpg');
+	background-size: cover;
+	background-position: center;
+	height:300px;
+	display: block;
+}
+.head:before{
+	content:'';
+	display: block;
+	width:100%;
+	position: absolute;
+	top:0px;
+	height:100%;
+	background:#000;
+	opacity: .8;
+}
+section{
+	position:relative;
+}
+.description{
+	z-index: 10;
+}
+h1{
+	font-size:4.5rem;
+	color: #fff;
+}
+.content{
+	padding:50px 0px;
+}

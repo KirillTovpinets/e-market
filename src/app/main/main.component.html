@@ -1,0 +1,216 @@
+<menu-top></menu-top>
+<section id="main-slider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#main-slider" data-slide="1" class="active"></li>
+    <li data-target="#main-slider" data-slide="2"></li>
+    <li data-target="#main-slider" data-slide="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('http://nevseoboi.com.ua/uploads/posts/2012-06/1339246657-545106-0115494_www.nevseoboi.com.ua.jpg');">
+    </div>
+    <div class="carousel-item" style="background-image: url('https://www.politusic.com/wp-content/uploads/2014/05/smart_electric_drive_electric_scooter.jpg');">
+    </div>
+    <div class="carousel-item" style="background-image: url('https://www.technologicvehicles.com/media/uploads/News/0001/02/5a0570c9ea945-ampnet-photo-20161101-124616.jpeg');">
+    </div>
+  </div>
+</section>
+<section id="welcome" class="section-with-title">
+  <div class="container">
+    <div class="greeting">
+      <h1>Welcome to <span class="colored">bezoil</span></h1>
+      <p>this is our slogan</p>
+    </div>
+  </div>
+</section>
+<!-- <section #catalog id="galeria">
+  <div class="row">
+    <div class="col d-flex align-items-center" id="galeria-image-1">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Miku Max</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Smart Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-2">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Hawk</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Motor Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-3">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Grace</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Motor Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-4">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Shadow</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Motor Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-5">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Razor</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Scooters</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex align-items-center" id="galeria-image-6">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">ZS</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Motor Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-7">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Crystal</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-8">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Leo</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-9">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Shiny</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Scooters</p></div>
+      </div>
+    </div>
+    <div class="col d-flex align-items-center" id="galeria-image-10">
+      <div class="image-info">
+        <div class="d-flex justify-content-center"><h3 class="title">Others</h3></div>
+        <div class="d-flex justify-content-center"><p class="subtitle">Electric Scooters</p></div>
+      </div>
+    </div>
+    </div>
+</section> -->
+<section id="advertisement" class="full-height">
+  <div class="full-screen-image d-flex align-items-center">
+    <div class="container">
+      <h3>Perform and <span class="colored">inspire</span></h3>
+    </div>
+  </div>
+</section>
+<section #shopWindow id="shop-window">
+  <div class="container">
+    <div class="row" style="margin-bottom:20px;">
+      <thumb [bike]="bike" *ngFor="let bike of bikes; index as i" [ngClass]="{'right-border': (i + 1) % 3 != 0 || i == 0}" class="col-4 item"></thumb>
+    </div>
+    <div class="row justify-content-center buttons">
+      <a class="btn btn-dark more-btn" [routerLink]="['/catalog']">More</a>
+    </div>
+  </div>
+</section>
+<!-- <section id="parallax" parallax style="height:300px; background-image: url('assets/images/parallax.jpg'); background-size:cover; background-position:center;">
+</section> -->
+<!-- <section id="brands" #brands class="section-with-title">
+  <div class="container">
+    <div class="greeting">
+      <h1>FEATURED <span class="colored">BRANDS</span></h1>
+      <p>this is our slogan</p>
+    </div>
+    <div class="brands-list">
+      <div class="row brands">
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+      </div>
+      <div class="row">
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+        <div class="col no-padding brand-item"><img src="http://placehold.it/300x200" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- <section id="bill-board" class="part-height">
+  <div class="full-screen-image d-flex align-items-center">
+    <div class="container">
+      <h3>Why us? <span class="colored">testimonials</span></h3>
+    </div>
+  </div>
+</section>
+<section id="testimonials" #testimonials>
+  <div class="container">
+    <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+    </ngx-slick>
+  </div>
+</section> -->
+<section class="callback">
+  <div class="container">
+      <div class="row content align-middle">
+        <div class="col-8 mr-auto text d-flex align-items-center"><p>Order a Callback to Get Free Professional Consultation</p></div>
+        <div class="col-4 d-flex align-items-center justify-content-end"><button class="btn btn-danger">Order a callback</button></div>
+      </div>
+    </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="title">Title</div>
+          <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore possimus molestiae provident rem dolorum, impedit porro iste odio! Aperiam adipisci quaerat quia amet, cum totam iure. Blanditiis, modi, iure.</div>
+        </div>
+        <div class="col">
+          <div class="title">Customer service</div>
+          <div class="content">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="title">Information</div>
+          <div class="content">
+            <ul>
+              <li>1 item</li>
+              <li>2 item</li>
+              <li>3 item</li>
+              <li>4 item</li>
+              <li>5 item</li>
+              <li>6 item</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="title">Concact us</div>
+          <div class="content">
+            <ul class="social-link">
+              <li><a href="" class="d-flex align-items-center justify-content-center">
+                <span class="fa fa-vk"></span>
+              </a></li>
+              <li><a href="" class="d-flex align-items-center justify-content-center">
+                <span class="fa fa-facebook"></span>
+              </a></li>
+              <li><a href="" class="d-flex align-items-center justify-content-center">
+                <span class="fa fa-twitter"></span>
+              </a></li>
+              <li><a href="" class="d-flex align-items-center justify-content-center">
+                <span class="fa fa-instagram"></span>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>Bezoil © 2018 All Rights Reserved</span>
+  </div>
+</footer>
+<!-- <script src="https://unpkg.com/slick-carousel@1.6.0/slick/slick.js"></script> -->

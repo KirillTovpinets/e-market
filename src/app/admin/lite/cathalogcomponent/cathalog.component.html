@@ -1,0 +1,34 @@
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h3 class="text-themecolor">Каталог скутеров</h3>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Sales overview chart -->
+<!-- ============================================================== -->
+<div class="alert alert-warning" *ngIf="bikes.length == 0">
+    <p>База данных пуста.</p>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-md-12" *ngFor="let bike of bikes">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title"><span class="lstick"></span>{{ bike.title }}</h4>
+                <div class="bike-img">
+                    <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+                </div>
+                <table class="bike-info table vm font-14">
+                    <ng-container *ngFor="let field of fields">
+                        <tr *ngIf="field != 'id' && field != 'image'">
+                            <td class="b-0">{{field}}</td>
+                            <td class="text-right font-medium b-0">{{bike[field]}}</td>
+                        </tr>
+                    </ng-container>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

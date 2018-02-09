@@ -1,0 +1,10 @@
+<div class="window-item">
+    <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+    <div class="description">
+      <h4>{{ bike.title }}</h4>
+      <span> <sup>$</sup> {{ bike.lifeVPrice }} - <sup>$</sup> {{ bike.powerVPrice }}</span>
+		<div class="button">
+			<button class="btn btn-block btn-success" (click)="AddToChart(bike)">Add to Chart</button>
+		</div>
+    </div>
+  </div>

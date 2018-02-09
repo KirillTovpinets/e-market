@@ -1,0 +1,47 @@
+.navbar{
+	padding: 1.5rem;
+}
+.navbar-transparent a{
+	color:#fff;
+}
+.navbar [class^="user"] a{
+	color:red;
+}
+
+form input{
+	color:#fff;
+	background-color: rgba(255,255,255, 0.08);
+	border-color: rgba(255,255,255,0.15);
+	border-radius: 3em;
+	border-left: none;
+}
+.navbar button{
+	background-color: transparent;
+	color:#fff;
+	border:none;
+}
+.navbar button:hover{
+	cursor: pointer;
+}
+.navbar form button{
+	border-radius: 3em 0 0 3em;
+	border:1px solid rgba(255, 255, 255, 0.15);
+	border-right:none;
+	background-color: rgba(255,255,255, 0.08);
+	border-color: rgba(255,255,255,0.15);
+	color:#fff;
+}
+.contacts{
+	margin-right:20px;
+	color:#fff;
+}
+[class^="user-"]{
+	padding:5px;
+	border: 1px solid #ccc;
+	border-top:none;
+	border-bottom:none;
+}
+
+.user-currency{
+	border-right:none;
+}

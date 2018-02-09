@@ -1,0 +1,31 @@
+ .description{
+	padding:30px;
+}
+
+ .description{
+	text-align: center;
+}
+
+ h4{
+	margin-bottom: 1em;
+}
+
+ span{
+	font-size: 1.85em;
+	font-weight: 700;
+}
+
+ .window-item{
+	margin-bottom: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+[class^="col-"]{
+	padding: 0;
+}
+.button{
+	margin-top:10px;
+}
