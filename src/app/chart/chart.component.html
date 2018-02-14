@@ -1,6 +1,85 @@
 <menu-top></menu-top>
 <section class="head d-flex align-items-center justify-content-center">
 	<div class="description">
-		<h1>Chart</h1>
+		<h1>Cart</h1>
+	</div>
+</section>
+<section class="content">
+	<div class="container">
+		<ng-container *ngIf="bikes.length !== 0">
+			<div *ngFor="let bike of bikes"  class="row bike">
+				<div class="preview col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="frame">
+						<img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+					</div>
+					<div class="preview-min d-flex justify-content-around">
+						<img src="http://placehold.it/100x100" alt="">
+						<img src="http://placehold.it/100x100" alt="">
+						<img src="http://placehold.it/100x100" alt="">
+						<img src="http://placehold.it/100x100" alt="">
+					</div>
+				</div>
+				<div class="description col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<span class="title">{{ bike.title }}</span>
+					<div class="ditails">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td>Sizes</td>
+									<td>{{ bike.width }} mm x {{ bike.height }} mm x {{ bike.length }} mm</td>	
+								</tr>
+								<tr>
+									<td>Break system</td>
+									<td>{{ bike.breakSystem }}</td>	
+								</tr>
+								<tr>
+									<td>Max speed</td>
+									<td>{{ bike.maxSpeed}} km/h</td>	
+								</tr>
+								<tr>
+									<td>Max distance using one battery</td>
+									<td>{{ bike.maxWayLength }} km</td>	
+								</tr>
+								<tr>
+									<td>Weight</td>
+									<td>{{ bike.weight }} kg</td>	
+								</tr>
+								<tr>
+									<td>Motor</td>
+									<td>{{ bike.motor }} W</td>	
+								</tr>
+								<tr>
+									<td>Battery</td>
+									<td>{{ bike.batteryV }} V {{ bike.batteryA }} A</td>	
+								</tr>
+								<tr>
+									<td>Charging time</td>
+									<td>{{ bike.batteryCharging }} h</td>	
+								</tr>
+								<tr>
+									<td>Max load</td>
+									<td>{{ bike.maxLoad }} kg</td>	
+								</tr>
+								<tr>
+									<td>Wheels</td>
+									<td>{{ bike.wheels }} mm</td>	
+								</tr>
+								<tr>
+									<td>Sit height</td>
+									<td>{{ bike.sitHeight }} mm</td>	
+								</tr>
+								<tr>
+									<td>Clearance</td>
+									<td>{{ bike.clearance }} mm</td>	
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</ng-container>
+		<div class="alert alert-warning text-center" *ngIf="bikes.length === 0">
+			<p>You haven't got any scooters in cart</p>
+		</div>
 	</div>
 </section>

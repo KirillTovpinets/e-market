@@ -4,7 +4,8 @@
       <h4>{{ bike.title }}</h4>
       <span> <sup>$</sup> {{ bike.lifeVPrice }} - <sup>$</sup> {{ bike.powerVPrice }}</span>
 		<div class="button">
-			<button class="btn btn-block btn-success" (click)="AddToChart(bike)">Add to Chart</button>
+			<button *ngIf="bikes.indexOf(bike) === -1" class="btn btn-block btn-success" (click)="AddToChart(bike)">Add to Chart</button>
+			<button disabled *ngIf="bikes.indexOf(bike) !== -1" class="btn btn-block btn-warning">Added</button>
 		</div>
     </div>
   </div>

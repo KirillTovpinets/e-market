@@ -1,6 +1,6 @@
 <header #main>
   <nav changeColorOnScroll class="navbar navbar-expand-lg fixed-top navbar-transparent">
-    <a href="#" class="navbar-brand" >Bezoil</a>
+    <a [routerLink]="['/']" class="navbar-brand" >Bezoil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,23 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <button [scrollTo]="main" class="nav-link">Home</button>
+          <button [routerLink]="['/']" class="nav-link">Home</button>
         </li>
         
         <li class="nav-item">
-          <button [scrollTo]="catalog" class="nav-link">Cathalog</button>
+          <button [routerLink]="['/catalog']" class="nav-link">Catalog</button>
         </li>
         
         <li class="nav-item">
-          <button [scrollTo]="shopWindow" class="nav-link">Shoproom</button>
+          <button [routerLink]="['/brands']" class="nav-link">Brands</button>
         </li>
         
         <li class="nav-item">
-          <button [scrollTo]="brands" class="nav-link">Brands</button>
-        </li>
-        
-        <li class="nav-item">
-          <button [scrollTo]="testimonials" class="nav-link">Testimonials</button>
+          <button [routerLink]="['/testimons']" class="nav-link">Testimonials</button>
         </li>
       </ul>
       <div class="contacts">
@@ -48,6 +44,11 @@
         <a [routerLink]="['/userchart']">
           <span class="fa fa-shopping-cart"></span>
           <span class="total">${{ totalCost }}</span>
+        </a>
+      </div>
+      <div class="user-language">
+        <a [routerLink]="['/ru/']">
+          <span>RU</span>
         </a>
       </div>
     </div>

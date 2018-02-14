@@ -11,10 +11,10 @@ export class MenuComponent implements OnInit {
 
 	totalCost:number = 0;
 	ngOnInit() {
-		const bikeSub = this.chart._bikes.subscribe((bike:any) =>{
-			console.log(typeof(bike.lifeVPrice));
-			console.log(typeof(this.totalCost));
-			this.totalCost = this.totalCost + (Number).parseInt(bike.lifeVPrice);
+		const bikeSub = this.chart._bikes.subscribe((bikes:any[]) =>{
+			for(let bike of bikes){
+				this.totalCost += (Number).parseInt(bike.lifeVPrice);
+			}
 		})
 	}
 }

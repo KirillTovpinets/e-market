@@ -25,6 +25,7 @@ import { AddService } from './admin/lite/services/get-params.service';
 import { NotificationsModule, NotificationsService } from 'angular4-notify';
 import { ChartService } from './shared/chart.service';
 import { ChartComponent } from './chart/chart.component';
+import { MainRuComponent } from './main-ru/main-ru.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ChartComponent } from './chart/chart.component';
     CatalogComponent,
     MenuComponent,
     ThumbComponent,
-    ChartComponent
+    ChartComponent,
+    MainRuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,9 @@
-.head{
-	background-image:url('/assets/images/bg3.jpg');
-	background-size: cover;
-	background-position: center;
-	height:300px;
+.title{
 	display: block;
+	font-size:40px;
 }
-h1{
-	font-size:4.5rem;
-	color: #fff;
+
+.bike{
+	border-bottom: 1px solid #ccc;
+	padding:20px;
 }
