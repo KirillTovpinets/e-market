@@ -7,7 +7,7 @@ import { GetListService } from '../shared/get-list.service';
 })
 export class CatalogComponent implements OnInit {
 	constructor(private data: GetListService) {}
-	bikes: any[];
+	public bikes: any[];
 	
 	ngOnInit() {
 		this.data.getList().subscribe(response => {

@@ -1,8 +1,8 @@
 <header #main>
   <nav changeColorOnScroll class="navbar navbar-expand-lg fixed-top navbar-transparent">
     <a [routerLink]="['/']" class="navbar-brand" >Bezoil</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarContent">
@@ -34,9 +34,29 @@
               <span class="fa fa-search"></span>
             </button>
           </div>
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control mr-sm-2" (keyup)="Search(searchValue)" type="search" placeholder="Search" name="value" [(ngModel)]="searchValue" aria-label="Search">
         </div>
+        <div class="result" *ngIf="searchResult.length !== 0 || searchResultMsg.length !== 0">
+            <table class="table table-hover table-striped">
+              <tbody>
+                <tr *ngFor="let bike of searchResult" [routerLink]="['/details/', bike.id]" (click)="choose()">
+                  <td>
+                    <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+                  </td>
+                  <td>
+                   <span>{{ bike.title }}</span> 
+                  </td>
+                </tr>
+                <tr *ngIf="searchResultMsg.length !== 0">
+                  <td colspan="2">
+                    {{ searchResultMsg }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
       </form>
+
       <div class="user-currency">
         <span class="total"> USD </span>
       </div>

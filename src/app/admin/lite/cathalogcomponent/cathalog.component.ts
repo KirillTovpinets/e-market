@@ -16,7 +16,7 @@ import { AddService } from '../services/get-params.service';
 export class CathalogComponent implements OnInit {
 	constructor(private dataSrv: AddService) {}
 
-	private bikes: any[] = [];
+	public bikes: any[] = [];
 	private fields: string[] = [];
 	ngOnInit() {
 		this.dataSrv.getData("catalog").subscribe(data => {

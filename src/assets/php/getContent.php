@@ -4,9 +4,14 @@
 
 	$mysqli = mysqli_connect(HOST, USER , PASSWORD, DATABASE) or die ("Ошибка подключения " . mysqli_connect_error());
 
-	$table = $_GET["table"];
-	$query = "SELECT * FROM $table";
-	$result = $mysqli->query($query) or die ("Error: " . mysqli_error($mysqli));
+	if (isset($_GET["table"])) {
+		$table = $_GET["table"];
+		$query = "SELECT * FROM $table";
+	}elseif (isset($_GET["value"]) && !empty($_GET["value"])) {
+		$value = $_GET["value"];
+		$query = "SELECT * FROM catalog WHERE title LIKE '$value%' OR title LIKE '%$value%'";
+	}
+	$result = $mysqli->query($query) or die ("Error in '$query': " . mysqli_error($mysqli));
 	$response = array();
 	while ($row = $result->fetch_assoc()) {
 		if (isset($row["image"])) {

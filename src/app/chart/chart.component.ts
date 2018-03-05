@@ -13,7 +13,6 @@ export class ChartComponent implements OnInit {
   ngOnInit() {
   	this.cart._bikes.subscribe(bikes => {
   		this.bikes = bikes;
-  		console.log(bikes);
   	})
   }
 

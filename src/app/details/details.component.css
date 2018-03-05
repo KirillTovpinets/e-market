@@ -1,0 +1,15 @@
+.title{
+	display: block;
+	font-size:40px;
+}
+
+.bike{
+	border-bottom: 1px solid #ccc;
+	padding:20px;
+}
+.btn{
+	margin-top:10px;
+}
+.preview{
+	margin-bottom:20px;
+}

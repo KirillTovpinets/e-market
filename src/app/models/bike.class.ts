@@ -14,6 +14,22 @@ export class Bike{
 	private _batteryCharging : number;
 	private _maxLoad : number;
 	private _file : any;
+	private _image : Blob;
+	private _id : number;
+	
+	public get id() : number {
+		return this._id;
+	}
+	public set id(v : number) {
+		this._id = v;
+	}
+	
+	public get image() : Blob {
+		return this._image;
+	}
+	public set image(v : Blob) {
+		this._image = v;
+	}
 
 	public get file() : any {
 		return this._file;

@@ -9,7 +9,7 @@ import { CathalogComponent } from './admin/lite/cathalogcomponent/cathalog.compo
 import { AddComponent } from './admin/lite/addcomponent/add.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ChartComponent } from './chart/chart.component';
-import { MainRuComponent } from './main-ru/main-ru.component';
+import { DetailsComponent } from './details/details.component';
 const componentRoutes: Routes = [
 	{ path: '', pathMatch: 'full', component: MainComponent},
 	{ 
@@ -41,13 +41,7 @@ const componentRoutes: Routes = [
 		path:'userchart', component: ChartComponent
 	},
 	{
-		path:'ru', 
-		children: [
-			{
-				path: '',
-				component: MainRuComponent
-			}
-		]
+		path:'details/:id', component: DetailsComponent
 	}
 ]
 

@@ -1,3 +1,5 @@
+import { registerLocaleData } from '@angular/common';
+import localeRu from '@angular/common/locales/ru';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './routing.module';
@@ -6,7 +8,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app/app.component';
 
 import { SlickModule } from 'ngx-slick';
-import { Parallax, ParallaxConfig } from 'ngx-parallax';
+// import { Parallax, ParallaxConfig } from 'ngx-parallax';
 import { ChangeColorDirective } from "./directives/changeColorOnScroll.directive";
 import { ScrollToModule } from 'ng2-scroll-to-el';
 
@@ -25,12 +27,14 @@ import { AddService } from './admin/lite/services/get-params.service';
 import { NotificationsModule, NotificationsService } from 'angular4-notify';
 import { ChartService } from './shared/chart.service';
 import { ChartComponent } from './chart/chart.component';
-import { MainRuComponent } from './main-ru/main-ru.component';
+import { DetailsComponent } from './details/details.component';
+import { FooterComponent } from './footer/footer.component';
+
+registerLocaleData(localeRu, "ru");
 
 @NgModule({
   declarations: [
     AppComponent,
-    Parallax,
     ChangeColorDirective,
     MainComponent,
     AdminComponent,
@@ -43,7 +47,8 @@ import { MainRuComponent } from './main-ru/main-ru.component';
     MenuComponent,
     ThumbComponent,
     ChartComponent,
-    MainRuComponent
+    DetailsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
