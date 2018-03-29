@@ -15,4 +15,8 @@ export class AddService {
   saveBike(bike: any): Observable<any>{
   	return this.http.post("assets/php/saveNew.php", bike);
   }
+
+  savePreviews(data: any): Observable<any>{
+  	return this.http.post("assets/php/savePreviews.php", data);
+  }
 }

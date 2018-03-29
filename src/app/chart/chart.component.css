@@ -7,3 +7,13 @@
 	border-bottom: 1px solid #ccc;
 	padding:20px;
 }
+.preview-min{
+	margin-bottom: 20px;
+}
+
+#orderBtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}

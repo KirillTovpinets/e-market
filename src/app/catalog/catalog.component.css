@@ -35,3 +35,19 @@ h1{
 .frame img{
 	width:100%;
 }
+table tr td{
+	padding:5px;
+}
+
+.filters{
+	border: 1px solid #ccc;
+	padding: 20px;
+	height:100%;
+}
+.filters .form-group{
+	border-bottom: 1px solid #aaa;
+}
+
+.form-group .row{
+	margin-bottom:20px;
+}

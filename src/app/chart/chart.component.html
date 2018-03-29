@@ -1,7 +1,11 @@
+<button class="btn btn-outline-danger" id="orderBtn" data-toggle="modal" data-target="#order" [attr.disabled]="bikes.length ? null : ''">
+	<i class="fa fa-shopping-cart"></i>
+	({{ bikes.length }})
+</button>
 <menu-top></menu-top>
 <section class="head d-flex align-items-center justify-content-center">
 	<div class="description">
-		<h1>Cart</h1>
+		<h1 translate>Cart</h1>
 	</div>
 </section>
 <section class="content">
@@ -13,64 +17,70 @@
 						<img [src]="'data:image/jpg;base64,'+bike.image" alt="">
 					</div>
 					<div class="preview-min d-flex justify-content-around">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
+						<ks-modal-gallery [modalImages]="bike.minPrev" [plainGalleryConfig]="plainGalleryRow"></ks-modal-gallery>
 					</div>
+					<button (click)="Remove(bike)" class="button btn btn-danger btn-block" translate>Remove</button>
 				</div>
 				<div class="description col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<span class="title">{{ bike.title }}</span>
 					<div class="ditails">
 						<table class="table">
-							<tbody>
+							<tbody i18n="@@params">
 								<tr>
-									<td>Sizes</td>
-									<td>{{ bike.width }} mm x {{ bike.height }} mm x {{ bike.length }} mm</td>	
+									<td translate>life</td>
+									<td>{{ bike.displayLVPrice | currency }}</td>
 								</tr>
 								<tr>
-									<td>Break system</td>
+									<td translate>power</td>
+									<td>{{ bike.displayPVPrice | currency }}</td>
+								</tr>
+								<tr>
+									<td translate>Sizes</td>
+									<td>{{ bike.width }} <span translate>mm</span> x {{ bike.height }} <span translate>mm</span> x {{ bike.length }} <span translate>mm</span></td>	
+								</tr>
+								<tr>
+									<td translate>Break</td>
 									<td>{{ bike.breakSystem }}</td>	
 								</tr>
 								<tr>
-									<td>Max speed</td>
+									<td translate>MaxS</td>
 									<td>{{ bike.maxSpeed}} km/h</td>	
 								</tr>
 								<tr>
-									<td>Max distance using one battery</td>
+									<td translate>MaxD</td>
 									<td>{{ bike.maxWayLength }} km</td>	
 								</tr>
 								<tr>
-									<td>Weight</td>
+									<td translate>Weight</td>
 									<td>{{ bike.weight }} kg</td>	
 								</tr>
 								<tr>
-									<td>Motor</td>
+									<td translate>Motor</td>
 									<td>{{ bike.motor }} W</td>	
 								</tr>
 								<tr>
-									<td>Battery</td>
+									<td translate>Battery</td>
 									<td>{{ bike.batteryV }} V {{ bike.batteryA }} A</td>	
 								</tr>
 								<tr>
-									<td>Charging time</td>
-									<td>{{ bike.batteryCharging }} h</td>	
+									<td translate>Charging</td>
+									<td>{{ bike.batteryCharging }} <span translate>h</span></td>	
 								</tr>
 								<tr>
-									<td>Max load</td>
-									<td>{{ bike.maxLoad }} kg</td>	
+									<td translate>MaxL</td>
+									<td>{{ bike.maxLoad }} <span translate>kg</span></td>	
 								</tr>
 								<tr>
-									<td>Wheels</td>
-									<td>{{ bike.wheels }} mm</td>	
+									<td translate>Wheels</td>
+									<td>{{ bike.wheels }} <span translate>mm</span></td>	
 								</tr>
 								<tr>
-									<td>Sit height</td>
-									<td>{{ bike.sitHeight }} mm</td>	
+									<td translate>Sit</td>
+									<td>{{ bike.sitHeight }} <span translate>mm</span></td>	
 								</tr>
 								<tr>
-									<td>Clearance</td>
-									<td>{{ bike.clearance }} mm</td>	
+									<td translate>Clearance</td>
+									<td>{{ bike.clearance }} <span translate>mm</span></td>	
 								</tr>
 							</tbody>
 						</table>
@@ -79,8 +89,49 @@
 			</div>
 		</ng-container>
 		<div class="alert alert-warning text-center" *ngIf="bikes.length === 0">
-			<p>You haven't got any scooters in cart</p>
+			<p translate>emptyCart</p>
 		</div>
 	</div>
 </section>
 <footercmp></footercmp>
+
+<!-- Modal -->
+<div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="order" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" i18n="@@modalWindow">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" translate>order</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<ul class="list-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+	        	<li class="list-group-item" *ngFor="let bike of bikes">{{ bike.title }}</li>
+	        </ul>
+	        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+	        	<form action="">
+	        		<div class="form-group">
+	        			<label for="" translate>name</label>
+	        			<input type="text" class="form-control">
+	        		</div>
+	        		<div class="form-group">
+	        			<label for="" translate>email</label>
+	        			<input type="email" class="form-control">
+	        		</div>
+	        		<div class="form-group">
+	        			<label for="" translate>number</label>
+	        			<input type="text" class="form-control">
+	        		</div>
+	        	</form>
+	        </div>
+      	</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" translate>Cancel</button>
+        <button type="button" class="btn btn-primary" translate>SendО</button>
+      </div>
+    </div>
+  </div>
+</div>

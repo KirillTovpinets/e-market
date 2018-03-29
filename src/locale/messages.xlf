@@ -11,20 +11,11 @@
         <note priority="1" from="description"> A welcome greeting</note>
         <note priority="1" from="meaning">site welcome </note>
       </trans-unit>
-      <trans-unit id="slogan" datatype="html">
-        <source>this is our slogan</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-        <note priority="1" from="description"> site slogan</note>
-        <note priority="1" from="meaning">slogan </note>
-      </trans-unit>
       <trans-unit id="sloganOne" datatype="html">
         <source>Perform and <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>inspire<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description"> first advertise slogan</note>
         <note priority="1" from="meaning">advertise slogan </note>
@@ -33,7 +24,7 @@
         <source>More</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description"> more button</note>
         <note priority="1" from="meaning">more </note>
@@ -42,63 +33,431 @@
         <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Order a Callback to Get Free Professional Consultation<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description"> order a Callback message</note>
         <note priority="1" from="meaning">callback </note>
       </trans-unit>
       <trans-unit id="callbackBtn" datatype="html">
-        <source>Order a callback</source>
+        <source>Callback</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="description"> a callback button</note>
         <note priority="1" from="meaning">callbackBtn </note>
       </trans-unit>
-      <trans-unit id="titleFt" datatype="html">
-        <source>Title</source>
+      <trans-unit id="sendBtn" datatype="html">
+        <source>Send your request</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description"> send button</note>
+        <note priority="1" from="meaning">sendReques </note>
+      </trans-unit>
+      <trans-unit id="nameBtn" datatype="html">
+        <source>Your name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/main/main.component.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description"> name button</note>
+        <note priority="1" from="meaning">name </note>
+      </trans-unit>
+      <trans-unit id="emailBtn" datatype="html">
+        <source>Your email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/main/main.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description"> email button</note>
+        <note priority="1" from="meaning">email </note>
+      </trans-unit>
+      <trans-unit id="messageBtn" datatype="html">
+        <source>Your message</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/main/main.component.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description"> message button</note>
+        <note priority="1" from="meaning">message </note>
+      </trans-unit>
+      <trans-unit id="cancelBtn" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/main/main.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description"> cancel button</note>
+        <note priority="1" from="meaning">cancel </note>
+      </trans-unit>
+      <trans-unit id="sendRquestBtn" datatype="html">
+        <source>Send</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/main/main.component.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description"> sendRquest button</note>
+        <note priority="1" from="meaning">sendRquest </note>
+      </trans-unit>
+      <trans-unit id="catalogTitle" datatype="html">
+        <source>Cathalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="FiltersTitle" datatype="html">
+        <source>Filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="MaxTitle" datatype="html">
+        <source>Max price</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="BreakTitle" datatype="html">
+        <source>Break system</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="BatteryTitle" datatype="html">
+        <source>Battery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="MotorTitle" datatype="html">
+        <source>Motor power</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/catalog/catalog.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="HomeMenu" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/menu/menu.component.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description"> Home menu</note>
+        <note priority="1" from="meaning">Home </note>
+      </trans-unit>
+      <trans-unit id="CatalogMenu" datatype="html">
+        <source>Catalog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/menu/menu.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description"> Catalog menu</note>
+        <note priority="1" from="meaning">Catalog </note>
+      </trans-unit>
+      <trans-unit id="NewsMenu" datatype="html">
+        <source>News</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/menu/menu.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description"> News menu</note>
+        <note priority="1" from="meaning">News </note>
+      </trans-unit>
+      <trans-unit id="TestimonialsMenu" datatype="html">
+        <source>Testimonials</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/menu/menu.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description"> Testimonials menu</note>
+        <note priority="1" from="meaning">Testimonials </note>
+      </trans-unit>
+      <trans-unit id="AddToCartMenu" datatype="html">
+        <source>Add to Chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/thumb/thumb.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description"> AddToCart menu</note>
+        <note priority="1" from="meaning">AddToCart </note>
+      </trans-unit>
+      <trans-unit id="AddedMenu" datatype="html">
+        <source>Added</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/thumb/thumb.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> Added menu</note>
+        <note priority="1" from="meaning">Added </note>
+      </trans-unit>
+      <trans-unit id="DetailsMenu" datatype="html">
+        <source>Details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/thumb/thumb.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description"> Details menu</note>
+        <note priority="1" from="meaning">Details </note>
+      </trans-unit>
+      <trans-unit id="cartTitle" datatype="html">
+        <source>Cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/chart/chart.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="RemoveBtn" datatype="html">
+        <source>Remove</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/chart/chart.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="params" datatype="html">
+        <source>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>life version price<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION" equiv-text="{{ bike.displayLVPrice | currency }}"/><x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>power version price<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ bike.displayPVPrice | currency }}"/><x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Sizes<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_2" equiv-text="{{ bike.width }}"/> mm x <x id="INTERPOLATION_3" equiv-text="{{ bike.height }}"/> mm x <x id="INTERPOLATION_4" equiv-text="{{ bike.length }}"/> mm<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Break system<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_5" equiv-text="{{ bike.breakSystem }}"/><x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Max speed<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_6" equiv-text="{{ bike.maxSpeed}}"/> km/h<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Max distance using one battery<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_7" equiv-text="{{ bike.maxWayLength }}"/> km<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Weight<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_8" equiv-text="{{ bike.weight }}"/> kg<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Motor<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_9" equiv-text="{{ bike.motor }}"/> W<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Battery<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_10" equiv-text="{{ bike.batteryV }}"/> V <x id="INTERPOLATION_11" equiv-text="{{ bike.batteryA }}"/> A<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Charging time<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_12" equiv-text="{{ bike.batteryCharging }}"/> h<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Max load<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_13" equiv-text="{{ bike.maxLoad }}"/> kg<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Wheels<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_14" equiv-text="{{ bike.wheels }}"/> mm<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Sit height<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_15" equiv-text="{{ bike.sitHeight }}"/> mm<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+								<x id="START_TABLE_ROW" ctype="x-tr" equiv-text="&lt;tr&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/>Clearance<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>
+									<x id="START_TABLE_CELL" ctype="x-td" equiv-text="&lt;td&gt;"/><x id="INTERPOLATION_16" equiv-text="{{ bike.clearance }}"/> mm<x id="CLOSE_TABLE_CELL" ctype="x-td" equiv-text="&lt;/td&gt;"/>	
+								<x id="CLOSE_TABLE_ROW" ctype="x-tr" equiv-text="&lt;/tr&gt;"/>
+							</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/chart/chart.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/details/details.component.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emptyCart" datatype="html">
+        <source>You haven&apos;t got any scooters in cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/chart/chart.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="modalWindow" datatype="html">
+        <source>
+    <x id="START_TAG_DIV_6" ctype="x-div" equiv-text="&lt;div&gt;"/>
+      <x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+        <x id="START_HEADING_LEVEL5" ctype="x-h5" equiv-text="&lt;h5&gt;"/>Your order<x id="CLOSE_HEADING_LEVEL5" ctype="x-h5" equiv-text="&lt;/h5&gt;"/>
+        <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>×<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+      <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      <x id="START_TAG_DIV_4" ctype="x-div" equiv-text="&lt;div&gt;"/>
+      	<x id="START_TAG_DIV_3" ctype="x-div" equiv-text="&lt;div&gt;"/>
+      		<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+	        	<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="INTERPOLATION" equiv-text="{{ bike.title }}"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+	        <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+	        <x id="START_TAG_DIV_2" ctype="x-div" equiv-text="&lt;div&gt;"/>
+	        	<x id="START_TAG_FORM" ctype="x-form" equiv-text="&lt;form&gt;"/>
+	        		<x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+	        			<x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Your name<x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+	        			<x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+	        		<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+	        		<x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+	        			<x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Your email<x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+	        			<x id="TAG_INPUT_1" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+	        		<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+	        		<x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+	        			<x id="START_TAG_LABEL" ctype="x-label" equiv-text="&lt;label&gt;"/>Your contact number<x id="CLOSE_TAG_LABEL" ctype="x-label" equiv-text="&lt;/label&gt;"/>
+	        			<x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input/&gt;"/>
+	        		<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+	        	<x id="CLOSE_TAG_FORM" ctype="x-form" equiv-text="&lt;/form&gt;"/>
+	        <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      	<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+      <x id="START_TAG_DIV_5" ctype="x-div" equiv-text="&lt;div&gt;"/>
+        <x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Cancel<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+        <x id="START_TAG_BUTTON_2" ctype="x-button" equiv-text="&lt;button&gt;"/>Send order<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+      <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+    <x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/chart/chart.component.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AddToChartTitle" datatype="html">
+        <source>Add to cart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/details/details.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="titleFt" datatype="html">
+        <source>BEZOIL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">title footer</note>
       </trans-unit>
       <trans-unit id="contentFt" datatype="html">
-        <source>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore possimus molestiae provident rem dolorum, impedit porro iste odio! Aperiam adipisci quaerat quia amet, cum totam iure. Blanditiis, modi, iure.</source>
+        <source>
+            <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+              <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>About Us<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+              <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Cathalog<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+              <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>Manufactures<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+              <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/><x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>Testimonials<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+          </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">7</context>
         </context-group>
         <note priority="1" from="description">titla footer content</note>
       </trans-unit>
       <trans-unit id="customerSrv" datatype="html">
-        <source>Customer service</source>
+        <source>Customer support</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">customer service</note>
       </trans-unit>
-      <trans-unit id="Information" datatype="html">
-        <source>Information</source>
+      <trans-unit id="Delivery" datatype="html">
+        <source>Delivery</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description"> Delivery item</note>
+        <note priority="1" from="meaning">Delivery </note>
+      </trans-unit>
+      <trans-unit id="Payment" datatype="html">
+        <source>Payment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description"> Payment item</note>
+        <note priority="1" from="meaning">Payment </note>
+      </trans-unit>
+      <trans-unit id="Guarantee" datatype="html">
+        <source>Guarantee</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description"> Guarantee item</note>
+        <note priority="1" from="meaning">Guarantee </note>
+      </trans-unit>
+      <trans-unit id="PrivacyPolicy" datatype="html">
+        <source>Privacy policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description"> PrivacyPolicy item</note>
+        <note priority="1" from="meaning">PrivacyPolicy </note>
+      </trans-unit>
+      <trans-unit id="Information" datatype="html">
+        <source>Payment method</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
-        <source>Concact us</source>
+        <source>Join us</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="footer" datatype="html">
         <source>Bezoil © 2018 All Rights Reserved</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/main/main.component.ts</context>
-          <context context-type="linenumber">147</context>
+          <context context-type="sourcefile">app/footer/footer.component.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AboutUs" datatype="html">
+        <source>About us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/aboutus/aboutus.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="AboutUsText" datatype="html">
+        <source>Интернет-магазин Bezoil.com представляет обширный каталог электротранспорта лидирующих производителей и это позволяет нам удовлетворить любые потребности различных покупателей. Мы являемся авторизированными дилерами всех брендов представленных на сайте на территории Беларуси и предлагаем только полную комплектацию, официальную гарантию и любую специализированную помощь по товару. 
+		Наши электрические скутеры разработаны для комфортных поездок и приятного досуга. Быстрый и надежный, безопасный и высокотехнологичный - эти все качества отличают нашу продукцию от других аналогов. С Bezoil вы сможете первым насладиться уникальным видом транспорта, получив уникальный опыт по привлекательной цене.
+		Мы предлагаем вам различные модели электрического транспорта, разработанные для удовлетворения потребностей различных категорий клиентов: подростки, которые  хотят получить новые ощущения от поездки на электроскутере и взрослые, предпочитающих мощные и быстрые электрические скутеры с моментальным ускорением. Кроме этого, Bezoil также предлагает модифицированные электрические скутеры со специализированным дизайном, которые способны преодолеть расстояние до 100 км без подзарядки для транспортных компаний, компаний, оказывающих туристические и арендные услуги.
+		В интернет-магазине Bezoil вы найдете для себя только качественную и самую современную технику по отличным ценам. Мы следим за последними тенденциями на рынке и постоянно совершенствуем и модернизируем существующие модели а также разрабатываем новые модели для удовлетворения растущих потребностей наших клиентов.
+		Миссия Bezoil заключается в обеспечении экологически чистого, экономичного и инновационного транспорта, который уменьшает вероятность транспортных заторов и снижает загрязнение воздуха в городах, что позволяет ежедневно совершать поездку быстро, легко и удобно без вредных выбросов, проблем и забот. 
+		Наша концепция заключается в том, чтобы способствовать развитию безопасного и мобильного электротранспорта во всем мире и изменить существующую структуру городского транспорта на более комфортную и удобную.
+		Философия Bezoil заключается в следующем:
+		Свобода: Свобода передвижения и мобильность всегда и везде. Передвигайтесь на работу, в университет без всяких проблем. Почувствуйте наслаждения от путешествий и забудьте про стоимость бензина, он вам больше не нужен. 
+		Экологически чистый &amp; Уникальные технологии: Без вредных выбросов, громкого шума и городских пробок. Наш электротранспорт абсолютно 100 % экологичный, энергоэффективный  и прост в зарядке. Электроскутера Bezoil это &quot;умная&quot; техника, которая сочетает в себе множество уникальных технологических новинок, которые обеспечивают абсолютную безопасность и высокое качество.
+		Доступная цена: Bezoil дает вам наиболее ценный продукт на рынке. Мы хотим, чтобы надежный и удобный электрический транспорт был доступен для всех по привлекательной цене.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/aboutus/aboutus.component.ts</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
     </body>

@@ -1,8 +1,11 @@
 import { Size } from './size.class';
+import { Image } from 'angular-modal-gallery';
 export class Bike{
 	private _title : string;
 	private _lifeVPrice : number;
 	private _powerVPrice : number;
+	private _displayLVPrice : number;
+	private _displayPVPrice : number;
 	private _size : Size;
 	private _breakSystem : number;
 	private _maxSpeed : number;
@@ -15,8 +18,43 @@ export class Bike{
 	private _maxLoad : number;
 	private _file : any;
 	private _image : Blob;
+	private _previews : Blob[];
 	private _id : number;
-	
+	private _update : boolean;
+	private _minPrev : Image[];
+
+	public get minPrev() : Image[] {
+		return this._minPrev;
+	}
+	public set minPrev(v : Image[]) {
+		this._minPrev = v;
+	}
+
+	public get update() : boolean {
+		return this._update;
+	}
+	public set update(v : boolean) {
+		this._update = v;
+	}
+	public get previews() : Blob[] {
+		return this._previews;
+	}
+	public set previews(v : Blob[]) {
+		this._previews = v;
+	}
+
+	public get displayPVPrice() : number {
+		return this._displayPVPrice;
+	}
+	public set displayPVPrice(v : number) {
+		this._displayPVPrice = v;
+	}
+	public get displayLVPrice() : number {
+		return this._displayLVPrice;
+	}
+	public set displayLVPrice(v : number) {
+		this._displayLVPrice = v;
+	}
 	public get id() : number {
 		return this._id;
 	}
@@ -118,6 +156,7 @@ export class Bike{
 	}
 	constructor(){
 		this._size = new Size(1, 1, 1, 1, 1, 1);
+		this._minPrev = [];
 		// this._title = "Maku";
 		this._lifeVPrice = 0;
 		this._powerVPrice = 0;

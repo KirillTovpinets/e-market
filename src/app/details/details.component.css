@@ -13,3 +13,11 @@
 .preview{
 	margin-bottom:20px;
 }
+.preview-min{
+	max-width: 100px;
+	padding:10px;
+	border: 1px solid #ccc;
+}
+.preview-min img{
+	width:100%;
+}

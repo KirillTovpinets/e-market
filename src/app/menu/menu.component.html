@@ -8,19 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <button [routerLink]="['/']" class="nav-link">Home</button>
+          <button [routerLink]="['/']" class="nav-link" translate>Home</button>
         </li>
         
         <li class="nav-item">
-          <button [routerLink]="['/catalog']" class="nav-link">Catalog</button>
+          <button [routerLink]="['/catalog']" class="nav-link" translate>Cathalog</button>
         </li>
         
         <li class="nav-item">
-          <button [routerLink]="['/brands']" class="nav-link">Brands</button>
+          <button [routerLink]="['/brands']" class="nav-link" translate>News</button>
         </li>
         
         <li class="nav-item">
-          <button [routerLink]="['/testimons']" class="nav-link">Testimonials</button>
+          <button [routerLink]="['/testimons']" class="nav-link" translate>Testimonials</button>
         </li>
       </ul>
       <div class="contacts">
@@ -34,7 +34,7 @@
               <span class="fa fa-search"></span>
             </button>
           </div>
-          <input class="form-control mr-sm-2" (keyup)="Search(searchValue)" type="search" placeholder="Search" name="value" [(ngModel)]="searchValue" aria-label="Search">
+          <input class="form-control mr-sm-2" (keyup)="Search(searchValue)" type="search" placeholder="{{ 'Search' | translate }}" name="value" [(ngModel)]="searchValue" aria-label="Search">
         </div>
         <div class="result" *ngIf="searchResult.length !== 0 || searchResultMsg.length !== 0">
             <table class="table table-hover table-striped">
@@ -57,8 +57,15 @@
           </div>
       </form>
 
-      <div class="user-currency">
-        <span class="total"> USD </span>
+      <div class="user-currency" *ngIf="currentCurrency !== undefined">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="currencyBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ currentCurrency.Cur_Abbreviation }}
+          </button>
+          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="currencyBtn">
+            <a class="dropdown-item" *ngFor="let currency of currencyList"(click)="ChangeCurrency(currency)"> {{ currency.Cur_Abbreviation }}</a>
+          </div>
+        </div>
       </div>
       <div class="user-cart">
         <a [routerLink]="['/userchart']">
@@ -66,10 +73,15 @@
           <span class="total">${{ totalCost }}</span>
         </a>
       </div>
-      <div class="user-language">
-        <a [routerLink]="['/ru/']">
-          <span>RU</span>
-        </a>
+      <div class="user-language" *ngIf="currentLang !== undefined">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="langBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ currentLang.label }}
+          </button>
+          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="langBtn">
+            <a class="dropdown-item" *ngFor="let lang of langList" (click)="ChangeLang(lang)"> {{ lang.label }}</a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

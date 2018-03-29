@@ -25,6 +25,19 @@ form input{
 	border-radius: 3em;
 	border-left: none;
 }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
 .navbar button{
 	background-color: transparent;
 	color:#fff;
@@ -51,8 +64,13 @@ form input{
 	border-top:none;
 	border-bottom:none;
 }
+[class^="user-"] .btn{
+	padding:initial;
+	color:red;
+}
 .user-language{
 	border-left:none;
+	text-transform: uppercase;
 }
 .user-currency{
 	border-right:none;

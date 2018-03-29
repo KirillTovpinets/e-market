@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	templateUrl: './admin.component.html',
@@ -13,10 +13,6 @@ import { Component, OnInit } from '@angular/core';
 				"../css/colors/default-dark.css"
 			]
 })
-export class AdminComponent implements OnInit {
+export class AdminComponent {
 	constructor() {}
-
-	ngOnInit() {
-		console.log("Im admin");
-	}
 }

@@ -11,10 +11,15 @@ export class ThumbComponent implements OnInit {
   constructor(private chartSrv: ChartService) { }
 
   bikes: any[];
+  currency: any;
   ngOnInit() {
     this.chartSrv._bikes.subscribe(bikes => {
       this.bikes = bikes;
     });
+
+    this.chartSrv._currency.subscribe(cur => {
+      this.currency = cur;
+    })
   }
 
   AddToChart(bike:Bike){

@@ -35,6 +35,12 @@ footer .copyright span{
 	float:left;
 	padding:;
 }
+a{
+	color: #5b5b5b;
+}
+a:hover{
+	color: red;
+}
 .social-link li a{
 	height:40px;
 	width:40px;
@@ -44,7 +50,19 @@ footer .copyright span{
 	border-radius: 50%;
 	transition: all .3s ease-out;
 }
+
 .social-link li a:hover{
 	border-color: red;
+	cursor: pointer;
 	color:red;
+}
+.fa-cc-paypal{
+	font-size: 100px;
+}
+.paypal-logo{
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
 }

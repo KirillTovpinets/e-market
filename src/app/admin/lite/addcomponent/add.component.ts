@@ -28,6 +28,7 @@ export class AddComponent implements OnInit {
 	url:string = "http://placehold.it/300x300";
 	formData: FormData = new FormData();
 	inputFile:File;
+	previews: File[] = [];
 	ngOnInit() {
 		this.addSrv.getData("breakSystems").subscribe(response => {
 			try{
@@ -43,6 +44,9 @@ export class AddComponent implements OnInit {
 		let formData = new FormData();
 		let file = this.inputFile;
 	  	formData.append('selectFile', file, file.name);
+	  	for (var i = 0; i < this.previews.length; ++i) {
+	  		formData.append('preview-' + i, this.previews[i], this.previews[i].name)
+	  	}
 	  	formData.append('newBike', JSON.stringify(this.newBike));
 		this.addSrv.saveBike(formData).subscribe(res => {
 			this.notify.addInfo(res._body)
@@ -58,5 +62,14 @@ export class AddComponent implements OnInit {
 			this.url = reader.result;
 		}
 		reader.readAsDataURL(input);
+	}
+
+	addPreview($event){
+		console.log($event.file);
+		this.previews.push($event.file)
+	}
+	popPreview($event){
+		var index = this.previews.indexOf($event.file);
+		this.previews.splice(index, 1);
 	}
 }

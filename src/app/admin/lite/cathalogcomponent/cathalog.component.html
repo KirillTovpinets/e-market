@@ -13,21 +13,54 @@
     <p>База данных пуста.</p>
 </div>
 <div class="row">
-    <div class="col-lg-4 col-md-12" *ngFor="let bike of bikes">
+    <div class="col-lg-6 col-md-12" *ngFor="let bike of bikes">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title"><span class="lstick"></span>{{ bike.title }}</h4>
-                <div class="bike-img">
-                    <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="bike-img">
+                            <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <ng-container *ngIf="bike.previews !== undefined && bike.previews.length !== 0">
+                            <div class="bike-prev" *ngFor="let prev of bike.previews">
+                                <img [src]="'data:image/jpg;base64,'+prev" alt="">
+                            </div>
+                        </ng-container>
+                        <ng2-file-input [drop-text]="' '" [multiple]="true" (onAdded)="addPreview($event, bike)" (onRemoved)="revPreview($event, bike)"></ng2-file-input>
+                    </div>
                 </div>
-                <table class="bike-info table vm font-14">
+                <mat-expansion-panel style="margin-bottom: 20px;">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Подробнее
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Характеристики скутера
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+
+                  <table class="bike-info table vm font-14">
                     <ng-container *ngFor="let field of fields">
-                        <tr *ngIf="field != 'id' && field != 'image'">
+                        <tr *ngIf="field != 'id' && field != 'image' && field != 'title'">
                             <td class="b-0">{{field}}</td>
-                            <td class="text-right font-medium b-0">{{bike[field]}}</td>
+                            <td class="text-right font-medium b-0">
+                                <input type="text" class="form-control" value="{{bike[field]}}" [attr.disabled]="change ? null : ''">
+                            </td>
                         </tr>
                     </ng-container>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn btn-block btn-success" *ngIf="change">Сохранить</button>
+                            <button class="btn btn-block" [ngClass]="{'btn-info' : !change, 'btn-danger' : change}" (click)="toggleEdit()">{{ buttonAction }}</button>
+                        </td>
+                    </tr>
                 </table>
+                </mat-expansion-panel>
+                <button class="btn btn-success btn-block" *ngIf="bike.update" (click)="Update(bike)">Сохранить</button>
+                <button class="btn btn-danger btn-block">Удалить</button>
             </div>
         </div>
     </div>

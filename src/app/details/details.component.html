@@ -12,68 +12,76 @@
 					<div class="frame">
 						<img [src]="'data:image/jpg;base64,'+currentBike.image" alt="">
 					</div>
-					<div class="preview-min d-flex justify-content-around">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
-						<img src="http://placehold.it/100x100" alt="">
+					<div class="preview-min-container d-flex justify-content-around">
+						<ks-modal-gallery [modalImages]="currentBike.minPrev" [plainGalleryConfig]="plainGalleryRow"></ks-modal-gallery>
+						<!-- <div *ngFor="let prev of currentBike.previews" class="preview-min d-flex align-items-center">
+							<img class="rounded" [src]="'data:image/jpg;base64,'+prev" alt="">
+						</div> -->
 					</div>
 					<div class="col-lg-12">
-						<button class="btn btn-block btn-success" (click)="AddToChart(currentBike)">Add to cart</button>
+						<button class="btn btn-block btn-success" translate (click)="AddToChart(currentBike)">Add</button>
 					</div>
 				</div>
 				<div class="description col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<span class="title">{{ currentBike.title }}</span>
 					<div class="ditails">
-						<table class="table">
+						<table class="table" i18n="@@params">
 							<tbody>
 								<tr>
-									<td>Sizes</td>
-									<td>{{ currentBike.width }} mm x {{ currentBike.height }} mm x {{ currentBike.length }} mm</td>	
+									<td translate>life</td>
+									<td>{{ currentBike.displayLVPrice | currency }}</td>
 								</tr>
 								<tr>
-									<td>Break system</td>
+									<td translate>power</td>
+									<td>{{ currentBike.displayPVPrice | currency }}</td>
+								</tr>
+								<tr>
+									<td translate>Sizes</td>
+									<td>{{ currentBike.width }} <span translate>mm</span> x {{ currentBike.height }} <span translate>mm</span> x {{ currentBike.length }} <span translate>mm</span></td>	
+								</tr>
+								<tr>
+									<td translate>Break</td>
 									<td>{{ currentBike.breakSystem }}</td>	
 								</tr>
 								<tr>
-									<td>Max speed</td>
+									<td translate>MaxS</td>
 									<td>{{ currentBike.maxSpeed}} km/h</td>	
 								</tr>
 								<tr>
-									<td>Max distance using one battery</td>
+									<td translate>MaxD</td>
 									<td>{{ currentBike.maxWayLength }} km</td>	
 								</tr>
 								<tr>
-									<td>Weight</td>
+									<td translate>Weight</td>
 									<td>{{ currentBike.weight }} kg</td>	
 								</tr>
 								<tr>
-									<td>Motor</td>
+									<td translate>Motor</td>
 									<td>{{ currentBike.motor }} W</td>	
 								</tr>
 								<tr>
-									<td>Battery</td>
+									<td translate>Battery</td>
 									<td>{{ currentBike.batteryV }} V {{ currentBike.batteryA }} A</td>	
 								</tr>
 								<tr>
-									<td>Charging time</td>
+									<td translate>Charging</td>
 									<td>{{ currentBike.batteryCharging }} h</td>	
 								</tr>
 								<tr>
-									<td>Max load</td>
+									<td translate>MaxL</td>
 									<td>{{ currentBike.maxLoad }} kg</td>	
 								</tr>
 								<tr>
-									<td>Wheels</td>
-									<td>{{ currentBike.wheels }} mm</td>	
+									<td translate>Wheels</td>
+									<td>{{ currentBike.wheels }} <span translate>mm</span></td>	
 								</tr>
 								<tr>
-									<td>Sit height</td>
-									<td>{{ currentBike.sitHeight }} mm</td>	
+									<td translate>Sit</td>
+									<td>{{ currentBike.sitHeight }} <span translate>mm</span></td>	
 								</tr>
 								<tr>
-									<td>Clearance</td>
-									<td>{{ currentBike.clearance }} mm</td>	
+									<td translate>Clearance</td>
+									<td>{{ currentBike.clearance }} <span translate>mm</span></td>	
 								</tr>
 							</tbody>
 						</table>

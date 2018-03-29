@@ -10,6 +10,11 @@ import { AddComponent } from './admin/lite/addcomponent/add.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { ChartComponent } from './chart/chart.component';
 import { DetailsComponent } from './details/details.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { DeliveryComponent } from './delivery/delivery.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { TestComponent } from './test/test.component';
 const componentRoutes: Routes = [
 	{ path: '', pathMatch: 'full', component: MainComponent},
 	{ 
@@ -38,11 +43,26 @@ const componentRoutes: Routes = [
 		path:'catalog', component: CatalogComponent
 	},
 	{
+		path:'aboutus', component: AboutusComponent
+	},
+	{
+		path:'privacy', component: PrivacyComponent
+	},
+	{
+		path:'delivary', component: DeliveryComponent
+	},
+	{
 		path:'userchart', component: ChartComponent
 	},
 	{
+		path:'contact', component: ContactsComponent
+	},
+	{
 		path:'details/:id', component: DetailsComponent
-	}
+	},
+	{
+		path:'test', component: TestComponent
+	}	
 ]
 
 

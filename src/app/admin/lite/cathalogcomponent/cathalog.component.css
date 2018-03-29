@@ -1,6 +1,21 @@
-.bike-img img{
+.bike-img img,
+.bike-prev img{
 	width: 100%;
 }
 .bike-img{
 	min-height: 250px;
+}
+
+.form-control:disabled{
+	background:none;
+	border:none;
+	text-align: right;
+}
+
+.table td{
+	padding: .0rem;
+}
+
+.table tr{
+	padding: 10px;
 }

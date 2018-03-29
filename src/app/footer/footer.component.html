@@ -3,47 +3,55 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="title" i18n="title footer@@titleFt">Title</div>
-          <div class="content" i18n="titla footer content@@contentFt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi tempore possimus molestiae provident rem dolorum, impedit porro iste odio! Aperiam adipisci quaerat quia amet, cum totam iure. Blanditiis, modi, iure.</div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="title" i18n="customer service@@customerSrv">Customer service</div>
+          <div class="title">BEZOIL</div>
           <div class="content">
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
+              <li><a [routerLink]="['/aboutus']" translate>About Us</a></li>
+              <li><a [routerLink]="['/catalog']" translate>Cathalog</a></li>
+              <li><a [routerLink]="['/manufactures']" translate>Manufactures</a></li>
+              <li><a [routerLink]="['/testimonials']" translate>Testimonials</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="title" i18n="@@Information">Information</div>
+          <div class="title" translate>Customer support</div>
           <div class="content">
             <ul>
-              <li>1 item</li>
-              <li>2 item</li>
-              <li>3 item</li>
-              <li>4 item</li>
-              <li>5 item</li>
-              <li>6 item</li>
+              <li><a [routerLink]="['/delivery']" translate>Delivery</a></li>
+              <li><a [routerLink]="['/payment']" translate>Payment</a></li>
+              <li><a [routerLink]="['/guarantee']" translate>Guarantee</a></li>
+              <li><a [routerLink]="['/privacy']" translate>Privacy policy</a></li>
             </ul>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-          <div class="title" i18n="@@contactUs">Concact us</div>
+          <div class="title" translate>Payment method</div>
+          <div class="content">
+            <div class="paypal-logo">
+              <span class="fa fa-cc-paypal"></span>
+              <div class="other-payment">
+                <span class="fa fa-cc-visa"></span>
+                <span class="fa fa-cc-mastercard"></span>
+                <span class="fa fa-cc-discover"></span>
+                <span class="fa fa-cc-amex"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <div class="title" translate>Join us</div>
           <div class="content">
             <ul class="social-link">
-              <li><a href="" class="d-flex align-items-center justify-content-center">
+              <li><a href="https://vk.com/bezoil" target="_blank" class="d-flex align-items-center justify-content-center">
                 <span class="fa fa-vk"></span>
               </a></li>
-              <li><a href="" class="d-flex align-items-center justify-content-center">
+              <li><a href="https://m.facebook.com/Bezoil-Scooter-1827618667290973/" target="_blank" class="d-flex align-items-center justify-content-center">
                 <span class="fa fa-facebook"></span>
               </a></li>
-              <li><a href="" class="d-flex align-items-center justify-content-center">
+              <li><a href="https://twitter.com/bezoil" target="_blank" class="d-flex align-items-center justify-content-center">
                 <span class="fa fa-twitter"></span>
               </a></li>
-              <li><a href="" class="d-flex align-items-center justify-content-center">
+              <li><a href="https://www.instagram.com/bezoil_/" target="_blank" class="d-flex align-items-center justify-content-center">
                 <span class="fa fa-instagram"></span>
               </a></li>
             </ul>
@@ -53,6 +61,6 @@
     </div>
   </div>
   <div class="copyright">
-    <span i18n="@@footer">Bezoil © 2018 All Rights Reserved</span>
+    <span translate>Bezoil © 2018 All Rights Reserved</span>
   </div>
 </footer>
