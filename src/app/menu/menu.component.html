@@ -79,7 +79,7 @@
             {{ currentLang.label }}
           </button>
           <div class="dropdown-menu dropdown-menu-left" aria-labelledby="langBtn">
-            <a class="dropdown-item" *ngFor="let lang of langList" (click)="ChangeLang(lang)"> {{ lang.label }}</a>
+            <a class="dropdown-item" *ngFor="let lang of langList" (click)="ChangeLang(lang)"> {{ lang.label | uppercase }}</a>
           </div>
         </div>
       </div>

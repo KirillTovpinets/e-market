@@ -207,7 +207,7 @@ img{
 }
 .full-height h3,
 .part-height h3{
-	font-size: 5.714em;
+	font-size: 6.714em;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
@@ -215,7 +215,7 @@ img{
 .full-height h3 .colored,
 .part-height h3 .colored{
 	font-size: 7.857rem;
-	color:#e43315;
+	color:#9CE415;
 }
 .part-height h3 .colored{
 	font-size: inherit;

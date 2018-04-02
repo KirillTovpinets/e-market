@@ -2,7 +2,7 @@
     <img [src]="'data:image/jpg;base64,'+bike.image" alt="">
     <div class="description">
       <h4>{{ bike.title }}</h4>
-      <span> {{ bike.displayLVPrice | currency: currency.Symbol: 0 }} - {{ bike.displayPVPrice | currency: currency.Symbol: 0 }}</span>
+      <span> {{ bike.displayLVPrice | currency: currency.Symbol: true: '.0' }} &mdash; {{ bike.displayPVPrice | currency: currency.Symbol: true: '.0' }}</span>
 		<div class="button">
 			<button *ngIf="bikes.indexOf(bike) === -1" class="btn btn-block btn-success" (click)="AddToChart(bike)" translate>Add</button>
 			<button disabled *ngIf="bikes.indexOf(bike) !== -1" class="btn btn-block btn-warning" translate>Added</button>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GetListService } from '../shared/get-list.service';
 import { ChartService } from '../shared/chart.service';
 import { Image } from 'angular-modal-gallery';
+import {TranslateService} from 'ng2-translate';
 @Component({
 	templateUrl: './catalog.component.html',
 	styleUrls: [`./catalog.component.css`],
@@ -9,7 +10,8 @@ import { Image } from 'angular-modal-gallery';
 })
 export class CatalogComponent implements OnInit {
 	constructor(private data: GetListService,
-				private chart: ChartService) {}
+				private chart: ChartService,
+				private translate: TranslateService) {}
 	public bikes: any[];
 	
 	public batteries: any[];
@@ -31,6 +33,7 @@ export class CatalogComponent implements OnInit {
 		this.data.getOptions("breakSystems").subscribe(response => {
 			try{
 				this.breakSystem = response.json();
+
 			}catch(e){
 				console.log(e);
 				console.log(response._body);
