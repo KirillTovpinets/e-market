@@ -4,9 +4,9 @@
       <h4>{{ bike.title }}</h4>
       <span> {{ bike.displayLVPrice | currency: currency.Symbol: true: '.0' }} &mdash; {{ bike.displayPVPrice | currency: currency.Symbol: true: '.0' }}</span>
 		<div class="button">
-			<button *ngIf="bikes.indexOf(bike) === -1" class="btn btn-block btn-success" (click)="AddToChart(bike)" translate>Add</button>
+			<button *ngIf="bikes.indexOf(bike) === -1" class="btn btn-block btn-danger" (click)="AddToChart(bike)" translate>Add</button>
 			<button disabled *ngIf="bikes.indexOf(bike) !== -1" class="btn btn-block btn-warning" translate>Added</button>
-      <button class="btn btn-block btn-info" [routerLink]="['/details/', bike.id]" translate>Details</button>
+      <button class="btn btn-block btn-dark" [routerLink]="['/details/', bike.id]" translate>Details</button>
 		</div>
     </div>
   </div>

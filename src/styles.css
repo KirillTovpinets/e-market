@@ -11,8 +11,19 @@ body{
 	background-color: #35DC4E;
 	border-color: #35DC4E;
 }
+.btn-danger{
+	background-color: #e43315;
+
+}
+.btn-warning{
+	background-color: #f6c629;
+}
+.btn{
+	border:none;
+}
 .btn:hover{
 	cursor: pointer;
+	background-color: #1e1e1e;
 }
 a:hover{
 	text-decoration: none;

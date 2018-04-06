@@ -215,7 +215,7 @@ img{
 .full-height h3 .colored,
 .part-height h3 .colored{
 	font-size: 7.857rem;
-	color:#9CE415;
+	color:#e43315;
 }
 .part-height h3 .colored{
 	font-size: inherit;
@@ -331,6 +331,8 @@ img{
 		padding: .75em 0.85em !important;
 	}
 }
-@media only screen and (min-width:992px) and (max-width:1024px) {
-	
+@media only screen and (max-width:1024px) {
+	.full-height h3{
+		font-size:5.31em;
+	}
 }
