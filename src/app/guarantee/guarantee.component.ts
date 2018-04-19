@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-privacy',
-  templateUrl: './privacy.component.html',
+  selector: 'app-guarantee',
+  templateUrl: './guarantee.component.html',
   styleUrls: ['../catalog/catalog.component.css']
 })
-export class PrivacyComponent implements OnInit {
+export class GuaranteeComponent implements OnInit {
 
   constructor() { }
+
   ngOnInit() {
   }
 

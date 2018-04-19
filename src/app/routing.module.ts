@@ -15,6 +15,8 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { TestComponent } from './test/test.component';
+import { GuaranteeComponent } from './guarantee/guarantee.component';
+import { PaymentComponent } from './payment/payment.component';
 const componentRoutes: Routes = [
 	{ path: '', pathMatch: 'full', component: MainComponent},
 	{ 
@@ -49,7 +51,13 @@ const componentRoutes: Routes = [
 		path:'privacy', component: PrivacyComponent
 	},
 	{
-		path:'delivary', component: DeliveryComponent
+		path:'delivery', component: DeliveryComponent
+	},
+	{
+		path:'payment', component: PaymentComponent
+	},
+	{
+		path:'guarantee', component: GuaranteeComponent
 	},
 	{
 		path:'userchart', component: ChartComponent

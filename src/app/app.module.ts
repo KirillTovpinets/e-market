@@ -41,6 +41,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { TestComponent } from './test/test.component';
+import { GuaranteeComponent } from './guarantee/guarantee.component';
+import { PaymentComponent } from './payment/payment.component';
 
 registerLocaleData(localeRu, "ru");
 
@@ -65,7 +67,9 @@ registerLocaleData(localeRu, "ru");
     PrivacyComponent,
     DeliveryComponent,
     AboutusComponent,
-    TestComponent
+    TestComponent,
+    GuaranteeComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

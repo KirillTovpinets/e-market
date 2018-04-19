@@ -26,6 +26,7 @@
     "@angular/router": "^5.0.0",
     "@ngx-translate/core": "^10.0.0",
     "@ngx-translate/http-loader": "^3.0.1",
+    "@types/googlemaps": "^3.30.8",
     "@types/hammerjs": "^2.0.35",
     "@types/mousetrap": "^1.6.0",
     "angular-font-awesome": "^3.1.2",

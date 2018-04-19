@@ -1,18 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { } from '@types/googlemaps';
 
 @Component({
   selector: 'app-delivery',
-  templateUrl: '../contacts/contacts.component.html',
+  templateUrl: './delivery.component.html',
   styleUrls: ['../catalog/catalog.component.css']
 })
 export class DeliveryComponent implements OnInit {
+  @ViewChild("map") mapElement: any;
+  map: google.maps.Map;
 
   constructor() { }
-	pagename: string = "Delivery policy";
-	content: string = `
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa nisi qui ducimus laborum ipsum eos perspiciatis tempora eaque ex odit rem, provident dolore minus tenetur, possimus unde debitis, sapiente quibusdam.
-	`;
   ngOnInit() {
+    var mapProp = {
+      center: new google.maps.LatLng(54.3095347, 26.8778923),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.mapElement.nativeElement, mapProp);
   }
 
 }

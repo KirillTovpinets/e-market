@@ -51,3 +51,7 @@ table tr td{
 .form-group .row{
 	margin-bottom:20px;
 }
+
+.map{
+	height: 500px;
+}
